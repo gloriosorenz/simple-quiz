@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    background-color: #A5C9CA;
+}
+
+
+input[type="text"], 
+input[type="date"], 
+input[type="email"],
+select {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  height: 1.5em;
+  width: 1.5em;
+  vertical-align: middle;
+  cursor: pointer;  
+}
+
+
+.container {
+    width: 100%;
+    height: auto;
+    background-color: #A5C9CA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Quiz
+-------------------------*/
+
+.quiz-container {
+    background-color: #fff;
+    width: 100%rem;
+    height: auto;
+	padding: 3rem 4rem;
+	margin: 6rem auto;
+	max-width: 35rem;
+	border-radius: 10px;
+}
+
+.quiz-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.quiz-question {
+	margin-bottom: 3.2rem;
+	padding-bottom: 3.2rem;
+	border-bottom: 1px solid #eee;
+}
+
+.quiz-question p {
+	font-weight: 600;
+	margin-bottom: 1.2rem;
+}
+
+.quiz-results {
+	display: none;
+	font-size: 1rem;
+}
+
+
+/* Form
+-------------------------*/
+.form-check {
+	margin-bottom: 0.6rem;
+}
+
+.form-check label {
+	margin-left: 1rem;
+}
+
+button {
+	cursor: pointer;
+	font-size: 1rem;
+	padding: 1.2rem 1.2rem;
+	border: none;
+	border-radius: 4px;
+    color: white;
+}
+
+button[type="submit"] {
+    background-color: #198754;
+}
+
+button[type="reset"] {
+    background-color: #dc3545;
+}
+
+.button-group {
+    text-align: right;
+}
+
+
+/* Accessibility
+-------------------------*/
+.visually-hidden {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	white-space: nowrap;
+}
+

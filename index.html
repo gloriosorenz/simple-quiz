@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <section class="quiz-container">
+            <!-- Header -->
+            <header class="quiz-header">
+                <h2>Simple Quiz</h2>
+                <div class="quiz-results">
+                    <!-- Score -->
+                    <p><strong>Score:</strong> <span class="quiz-score"></span></p>
+                </div>
+            </header>
+
+            <!-- Form -->
+            <form id="quizForm">
+
+                <!-- 1st Question -->
+                <div class="quiz-question">
+                    <p>What is the capital of the Philippines?</p>
+                    <input type="text" name="question1">
+                </div>
+
+                <!-- 2nd Question -->
+                <div class="quiz-question">
+                    <p>What is the value of x in this equation: x = 3 + 2×5.</p>
+                    <div class="form-check">
+                        <input type="radio" id="radioA" name="question2" value="25">
+                        <label for="question2">x = 25</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="radioB" name="question2" value="13">
+                        <label for="question2">x = 13</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="radioC" name="question2" value="18">
+                        <label for="question2">x = 18</label>
+                    </div>
+                </div>
+
+                <!-- 3rd Question -->
+                <div class="quiz-question">
+                    <p>Which of the following birds can fly? Choose 3 correct answers.</p>
+                    <div class="form-check">
+                        <input type="checkbox" id="checkboxA" class="question3" value="parrot">
+                        <label for="question3">Parrot</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="checkboxB" class="question3" value="eagle">
+                        <label for="question3">Eagle</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="checkboxC" class="question3" value="penguin">
+                        <label for="question3">Penguin</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="checkboxD" class="question3" value="crow">
+                        <label for="question3">Crow</label>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="button-group">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+        </section>
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
